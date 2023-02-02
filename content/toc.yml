@@ -1,0 +1,251 @@
+toc:
+  
+  - group: Pet Store and Books API
+    items:
+      - page: API Guide
+        file: pet-store-api/api-guides.md
+  - group: Pet Store API
+    items:
+      - group: Guides
+        items:
+          - page: Overview
+            file: pet-store-api/overview.md
+      - group: Guided Walkthroughs
+        items:
+          - page: Adding Pet Details
+            file: pet-store-api/guided-walkthroughs/walkthrough-1.md
+      - page: Quick API Reference
+        file: pet-store-api/api-reference.md
+      - group: API Endpoints
+        items:
+          - group: Pet
+            items:
+              - generate: 
+                from: endpoint
+                endpoint-name: getPetById
+                endpoint-group: pet
+              - generate: 
+                from: endpoint
+                endpoint-name: updatePetWithForm
+                endpoint-group: pet
+              - generate: 
+                from: endpoint
+                endpoint-name: deletePet
+                endpoint-group: pet
+              - generate: 
+                from: endpoint
+                endpoint-name: uploadFile
+                endpoint-group: pet
+              - generate: 
+                from: endpoint
+                endpoint-name: addPet
+                endpoint-group: pet
+              - generate: 
+                from: endpoint
+                endpoint-name: updatePet
+                endpoint-group: pet
+              - generate: 
+                from: endpoint
+                endpoint-name: findPetsByStatus
+                endpoint-group: pet
+              - generate: 
+                from: endpoint
+                endpoint-name: findPetsByTags
+                endpoint-group: pet
+          - group: Store
+            items:
+              - generate: 
+                from: endpoint
+                endpoint-name: placeOrder
+                endpoint-group: store
+              - generate: 
+                from: endpoint
+                endpoint-name: getOrderById
+                endpoint-group: store
+              - generate: 
+                from: endpoint
+                endpoint-name: deleteOrder
+                endpoint-group: store
+              - generate: 
+                from: endpoint
+                endpoint-name: getInventory
+                endpoint-group: store
+          - group: User
+            items:
+              - generate: 
+                from: endpoint
+                endpoint-name: getUserByName
+                endpoint-group: user
+              - generate: 
+                from: endpoint
+                endpoint-name: updateUser
+                endpoint-group: user
+              - generate: 
+                from: endpoint
+                endpoint-name: deleteUser
+                endpoint-group: user
+              - generate: 
+                from: endpoint
+                endpoint-name: loginUser
+                endpoint-group: user
+              - generate: 
+                from: endpoint
+                endpoint-name: logoutUser
+                endpoint-group: user
+              - generate: 
+                from: endpoint
+                endpoint-name: createUsersWithArrayInput
+                endpoint-group: user
+              - generate: 
+                from: endpoint
+                endpoint-name: createUsersWithListInput
+                endpoint-group: user
+              - generate: 
+                from: endpoint
+                endpoint-name: createUser
+                endpoint-group: user
+      - group: Models
+        items:
+          - group: Structures
+            items:
+              - generate: 
+                from: model
+                model-name: Pet
+              - generate: 
+                from: model
+                model-name: Tag
+              - generate: 
+                from: model
+                model-name: ApiResponse
+              - generate: 
+                from: model
+                model-name: Order
+              - generate: 
+                from: model
+                model-name: User
+          - group: Enumberations
+            items:
+              - generate: 
+                from: model
+                model-name: Category
+              - generate: 
+                from: model
+                model-name: Status
+              - generate: 
+                from: model
+                model-name: Status1
+              - generate: 
+                from: model
+                model-name: status2
+  - group: Books API
+    items:
+      - group: Guides
+        items:
+          - page: Overview
+            file: books-api/overview.md
+          - page: Getting Started
+            file: books-api/getting-started.md
+      - group: Guided Walkthroughs
+        items:
+          - page: Adding Books
+            file: books-api/guided-walkthroughs/walkthrough-1.md
+      - group: API Endpoints
+        items:
+          - generate: 
+            from: endpoint
+            endpoint-name: GET_lists-format
+            endpoint-group: 
+          - generate: 
+            from: endpoint
+            endpoint-name: GET_lists-date-list-json
+            endpoint-group: 
+          - generate: 
+            from: endpoint
+            endpoint-name: GET_lists-full-overview-format
+            endpoint-group: 
+          - generate: 
+            from: endpoint
+            endpoint-name: GET_lists-overview-format
+            endpoint-group: 
+          - generate: 
+            from: endpoint
+            endpoint-name: GET_lists-names-format
+            endpoint-group: 
+          - generate: 
+            from: endpoint
+            endpoint-name: GET_lists-best-sellers-history-json
+            endpoint-group: 
+          - generate: 
+            from: endpoint
+            endpoint-name: GET_reviews-format
+            endpoint-group: 
+      - group: Models
+        items:
+          - group: Structures
+            items:
+              - generate: 
+                from: model
+                model-name: OverviewResponse
+              - generate: 
+                from: model
+                model-name: Book
+              - generate: 
+                from: model
+                model-name: Book1
+              - generate: 
+                from: model
+                model-name: BookDetail
+              - generate: 
+                from: model
+                model-name: GET_lists-best-sellers-history-jsonResponse
+              - generate: 
+                from: model
+                model-name: GET_lists-date-list-jsonResponse
+              - generate: 
+                from: model
+                model-name: GET_lists-formatResponse
+              - generate: 
+                from: model
+                model-name: GET_lists-names-formatResponse
+              - generate: 
+                from: model
+                model-name: GET_reviews-formatResponse
+              - generate: 
+                from: model
+                model-name: Isbn
+              - generate: 
+                from: model
+                model-name: List
+              - generate: 
+                from: model
+                model-name: RanksHistory
+              - generate: 
+                from: model
+                model-name: Results
+              - generate: 
+                from: model
+                model-name: Results1
+              - generate: 
+                from: model
+                model-name: Results2
+              - generate: 
+                from: model
+                model-name: Results3
+              - generate: 
+                from: model
+                model-name: Results4
+              - generate: 
+                from: model
+                model-name: Results5
+              - generate: 
+                from: model
+                model-name: Review
+          - group: Enumberations
+            items:
+              - generate: 
+                from: model
+                model-name: Updated
+  - group: Setting up SDKs
+    items:
+      - page: Setting up SDKs
+        file: pet-store-api/Setting-up-SDKs.md
